@@ -7,4 +7,5 @@ RUN wget https://releases.hashicorp.com/terraform/0.6.16/terraform_0.6.16_linux_
 
 WORKDIR /root
 
-RUN setAwsCreds.sh
+COPY setAwsCreds.sh .
+RUN /root/setAwsCreds.sh
