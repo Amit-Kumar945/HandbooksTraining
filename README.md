@@ -12,7 +12,10 @@
   * Linux : https://s3-us-west-2.amazonaws.com/target-training/targetkey.pem
   * Windows : https://s3-us-west-2.amazonaws.com/target-training/targetkey.ppk
 * Login to your VM's using ubuntu user
-  * Linux: ssh -i targetkey.pem ubuntu@54.69.71.93
+  * Linux:
+    * Change permissio of targetkey
+    ```chmod 600 targetkey.pem```
+    * ssh -i targetkey.pem ubuntu@54.69.71.93
   * Windows: Use Putty to login to the system
 * Do initial setup of system
   * Go to HandbooksTraining directory
