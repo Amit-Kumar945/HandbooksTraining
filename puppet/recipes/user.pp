@@ -1,9 +1,8 @@
 user { 'sandy':
     ensure           => 'present',
-    home             => '/sbin',
-    shell              => '/sbin/nologin',
+    home             => '/home/sandy',
+    shell              => '/bin/bash',
     password     => '*',
-    gid                => '2',
     groups         => ['bin','sandy','adm','lp'],
     comment     => 'user for sandy'
 }

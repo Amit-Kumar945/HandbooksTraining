@@ -7,3 +7,5 @@ RUN wget https://apt.puppetlabs.com/puppetlabs-release-pc1-trusty.deb && dpkg -i
 RUN apt-get update &&  apt-get -y install puppet-agent
 
 ENV PATH $PATH:/opt/puppetlabs/bin
+
+COPY recipes recipes
