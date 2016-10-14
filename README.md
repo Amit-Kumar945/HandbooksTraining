@@ -22,6 +22,10 @@
   ```$ cd HandbooksTraining```
   * Update the code to latest state
   ```git pull origin master```
+* Do initial setup of puppet
+``` cd puppet```
+``` make build-image```
+``` make run-image```
 
 
 PawanKumar.Sharma
