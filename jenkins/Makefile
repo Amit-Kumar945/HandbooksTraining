@@ -1,5 +1,6 @@
 build-image:
-	docker build -t training/jenkins .
+	docker build --no-cache -t training/jenkins .
 
 run-image:
-	docker run -it -P training/jenkins
+	docker rm -f jenkins || true
+	docker run -it -P -d --name jenkins training/jenkins
