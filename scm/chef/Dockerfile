@@ -2,10 +2,10 @@ FROM ubuntu:14.04
 
 RUN apt-get update && apt-get -y install git vim wget
 
-#RUN wget https://apt.puppetlabs.com/puppetlabs-release-pc1-trusty.deb && dpkg -i puppetlabs-release-pc1-trusty.deb
+RUN wget https://packages.chef.io/stable/ubuntu/12.04/chefdk_0.19.6-1_amd64.deb
 
-#RUN apt-get update &&  apt-get -y install puppet-agent
+RUN dpkg -i chefdk_0.19.6-1_amd64.deb
 
-#ENV PATH $PATH:/opt/puppetlabs/bin
+#COPY runlist runlist
 
-COPY runlist runlist
+VOLUME /runlist
