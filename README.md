@@ -1,8 +1,7 @@
 # HandbooksTraining
 
 ## Presentations
-* https://s3-us-west-2.amazonaws.com/target-training/day1.zip
-* https://s3-us-west-2.amazonaws.com/target-training/day2.zip
+* https://s3-us-west-2.amazonaws.com/target-trng/TargetPPT.zip
 
 ## Handbook Guides
 * https://s3-us-west-2.amazonaws.com/target-training/Handbooks.zip
