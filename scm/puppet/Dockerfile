@@ -8,4 +8,4 @@ RUN apt-get update &&  apt-get -y install puppet-agent
 
 ENV PATH $PATH:/opt/puppetlabs/bin
 
-COPY recipes recipes
+EXPOSE 8080
