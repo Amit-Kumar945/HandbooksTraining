@@ -1,4 +1,4 @@
-mavenJob('Code Building') {
+mavenJob('Code Stability') {
 	description("I\'ll build the application")
     logRotator(-1, 10)
 	scm {
@@ -7,11 +7,11 @@ mavenJob('Code Building') {
      		remote {
        			name('')
        			refspec('')
-       			url('git@github.com:OpsTree/ContinuousIntegration.git')
+       			url('https://github.com/OpsTree/ContinuousIntegration.git')
      		}
-   		}     
+   		}
  	}
  	//please enable the maven in your jenkins form jenkins configuration
- 	goals('clean install')
+ 	goals('clean compile')
  	rootPOM('Spring3HibernateApp/pom.xml')
 }

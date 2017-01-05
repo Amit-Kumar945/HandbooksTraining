@@ -11,7 +11,7 @@ mavenJob("Code Coverage") {
       }
     }
   }
-  goals('clean package cobertura:cobertura -Dcobertura.report.format=xml')
+  goals('clean cobertura:cobertura -Dcobertura.report.format=xml')
   rootPOM('Spring3HibernateApp/pom.xml')
   mavenInstallation('maven2')
   publishers {
