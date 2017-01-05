@@ -8,4 +8,4 @@ RUN apt-get update &&  apt-get -y install puppet-agent
 
 ENV PATH $PATH:/opt/puppetlabs/bin
 
-EXPOSE 8080
+EXPOSE 8080  8090 80
