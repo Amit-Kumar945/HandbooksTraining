@@ -1,4 +1,4 @@
-mavenJob('Code Stability') {
+mavenJob('CodeStability') {
 	description("I\'ll build the application")
     logRotator(-1, 10)
 	scm {

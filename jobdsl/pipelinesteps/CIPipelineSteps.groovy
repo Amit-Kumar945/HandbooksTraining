@@ -1,6 +1,8 @@
+stage 'Get Code'
+  build 'CodeCheckout'
+
 stage 'Code Stability'
-build 'Code Building'
-build 'Code Building'
+  build 'CodeStability'
+
 stage 'Code Quality'
-build 'Code Building'
-build 'Code Building'
+  build 'CodeCoverage'

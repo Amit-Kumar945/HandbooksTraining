@@ -1,4 +1,4 @@
-job('Code Checkout') {
+job('CodeCheckout') {
     description("I\'ll do the checkout the code form given git repo")
     logRotator(-1, 10)
     scm {
