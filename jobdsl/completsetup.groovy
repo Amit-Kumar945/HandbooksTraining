@@ -121,7 +121,7 @@ job('DSLArtifactGenerator') {
     shell('cp $WORKSPACE/target/*.war /tmp/')
   }
       
-}
+
 
 
 job('DSLCodeDeployer') {
