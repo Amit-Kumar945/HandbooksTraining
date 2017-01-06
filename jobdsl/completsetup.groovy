@@ -138,10 +138,10 @@ job('DSLCodeDeployer') {
   steps {
     shell('appserver="172.17.0.2"\n' +
 		 'echo "Copy latest artifact to app server"\n' +
-		 'scp /tmp/*war root@${appserver}:/tmp/ \n' +
-		 'scp $WORKSPACE/scripts/deployer.sh root@appserver:/tmp/deployer.sh \n' +
+		 'scp -o StrictHostKeyChecking=no /tmp/*war root@${appserver}:/tmp/ \n' +
+		 'scp -o StrictHostKeyChecking=no $WORKSPACE/scripts/deployer.sh root@${appserver}:/tmp/deployer.sh \n' +
 		 'echo "Run a sccript that will stop tomcat deploy war and start tomcat" \n' +
-		 'ssh root@appserver "bash /tmp/deployer.sh " \n'  
+		 'ssh -o StrictHostKeyChecking=no  root@${appserver} "bash /tmp/deployer.sh " \n'  
          )
   }
 }
