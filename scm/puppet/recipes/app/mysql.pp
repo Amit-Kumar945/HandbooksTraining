@@ -9,6 +9,6 @@ exec {"startmysql":
 
 exec {"databaseScript":
      require => Exec['startmysql'],
-    command => "/bin/bash -c '/root/recipes/database.sh'"
+     command => "/bin/bash -c '/root/recipes/app/database.sh'"
 }
 
