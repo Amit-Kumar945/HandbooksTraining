@@ -1,17 +1,17 @@
-Stage "Code Fetch"
+Stage 'Code Fetch'
     build 'DSLCodeFetch'
 
-Stage "Code Stability"
+Stage 'Code Stability'
     build 'DSLCodeStability'
 
-Stage "Code Quality"
+Stage 'Code Quality'
     build 'DSLCodeQuality'
 
-Stage "Code Coverage"
+Stage 'Code Coverage'
     build 'DSLCodeCoverage'
 
-Stage "Artifact Generation"
+Stage 'Artifact Generation'
     build 'DSLCodeGenerator'
 
-Stage "Code Deploy"
+Stage 'Code Deploy'
     build 'DSLCodeDeployer'
