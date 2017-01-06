@@ -69,7 +69,7 @@ job('DSLCodeQuality') {
   }
 }
 
-job('DSLAPICodeCoverage') {
+job('DSLCodeCoverage') {
   description('Code Coverage')
   logRotator {
     daysToKeep(60)
