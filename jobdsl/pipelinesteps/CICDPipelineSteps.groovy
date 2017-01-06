@@ -11,7 +11,7 @@ stage 'Code Coverage'
     build 'DSLCodeCoverage'
 
 stage 'Artifact Generation'
-    build 'DSLCodeGenerator'
+    build 'DSLArtifactGenerator'
 
 stage 'Code Deploy'
     build 'DSLCodeDeployer'
