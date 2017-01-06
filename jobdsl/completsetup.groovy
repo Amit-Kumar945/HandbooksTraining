@@ -1,3 +1,24 @@
+DSLCodeFetch
+
+
+job('DSLCodeFetch') {
+  description('Code Fetch')
+  logRotator {
+        daysToKeep(60)
+        numToKeep(20)
+        artifactDaysToKeep(1)
+    }
+    scm {
+        git {
+      remote {
+        url("$REPOSITORY")
+      }
+      branch("*/$BRANCH")
+     }
+    }
+  }
+
+
 job('DSLCodeStability') {
   description('Code Stability')
   logRotator {
