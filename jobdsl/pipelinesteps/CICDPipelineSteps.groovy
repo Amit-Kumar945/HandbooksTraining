@@ -13,5 +13,6 @@ stage 'Code Coverage'
 stage 'Artifact Generation'
     build 'DSLArtifactGenerator'
 
+input message: 'Do you want to Continue', ok: 'Deploy', submitter: 'saurabh'
 stage 'Code Deploy'
     build 'DSLCodeDeployer'
