@@ -112,7 +112,7 @@ job('DSLArtifactGenerator') {
       branch("*/$BRANCH")
      }
   }
-
+steps {
     maven {
       mavenInstallation('default')
       goals('install')
@@ -120,7 +120,8 @@ job('DSLArtifactGenerator') {
     }
     shell('cp $WORKSPACE/target/*.war /tmp/')
   }
-      
+ 
+}     
 
 
 
