@@ -1,6 +1,3 @@
-DSLCodeFetch
-
-
 job('DSLCodeFetch') {
   description('Code Fetch')
   logRotator {
