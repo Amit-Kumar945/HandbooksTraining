@@ -1,5 +1,5 @@
 echo "Shutdown tomcat server"
-/opt/tomcat/bin/shutdown.sh
+/opt/tomcat/bin/shutdown.sh || service tomcat7 stop
 sleep 10
 
 echo "Delete old version of app"
@@ -10,4 +10,4 @@ echo "Copy artifat from temporary location to tomcat root"
 cp /tmp/*.war /opt/tomcat/webapps/ROOT/ 
 
 echo "Start tomcat server again"
-/opt/tomcat/bin/startup.sh
+/opt/tomcat/bin/startup.sh ||  service tomcat7 start
