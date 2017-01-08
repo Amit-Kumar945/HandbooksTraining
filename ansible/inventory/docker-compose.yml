@@ -1,0 +1,18 @@
+version: '2'
+services:
+  host1:
+    build: host1
+    stdin_open: true
+    tty: true
+  host2:
+    build: host2
+    stdin_open: true
+    tty: true
+  host3:
+    build: host3
+    stdin_open: true
+    tty: true
+  control-server:
+    stdin_open: true
+    tty: true
+    build: control-server
