@@ -1,0 +1,12 @@
+Run 2 jenkins container, perform below operations
+  - List out the CPU/memory usage of all and 1 single container
+  - List out the processes running inside one of the jenkins container
+  - Get the IP address of both the running jenkins containers
+  - Get the full id of jenkins container
+  - Get the start time of jenkins container
+  - Get the name of docker container
+  - Get the CpuPercent associated with jenkins container
+  - Get the hostname of jenkins container
+  - Get the list of ports that are exposed in this container
+  - Get the name of image
+  - Get the Network Id
