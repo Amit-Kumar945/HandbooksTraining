@@ -1,0 +1,11 @@
+Perform below sequence of operations
+- Run an ubuntu docker container
+- Get the name of 2 log file in /var/log directory in an order of maximum size(Command can be provided on request)
+- Download first maximum size file from docker container on your host system
+- Remove the first maximum size file from docker container
+- Stop the container
+- Start the container
+- Verify if deleted file exists in the container
+- Copy the deleted file from your local system to the container
+- Get the name of 2 log file in /var/log directory in an order of maximum size
+- Delete your container
