@@ -16,3 +16,7 @@ services:
     stdin_open: true
     tty: true
     build: control-server
+    links:
+      - host1:host1
+      - host2:host2
+      - host3:host3
