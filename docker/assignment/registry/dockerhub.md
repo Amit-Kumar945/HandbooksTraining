@@ -1,0 +1,9 @@
+- Create your account in docker hub
+  - hub.docker.com
+- Run an ubuntu container
+- Create a user in your ubuntu container
+- Create a file in /tmp folder with your name
+- Create an image out of it
+- Publish your image in dockerhub
+- Run the image published by your partner in your local system.
+- Verify if the user and file exists
