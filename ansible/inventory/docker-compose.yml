@@ -5,11 +5,11 @@ services:
     stdin_open: true
     tty: true
   host2:
-    build: host2
+    build: host1
     stdin_open: true
     tty: true
   host3:
-    build: host3
+    build: host1
     stdin_open: true
     tty: true
   control-server:
