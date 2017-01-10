@@ -1,15 +1,23 @@
 version: '2'
 services:
-  host1:
-    build: host1
+  proxy1:
+    build: host
     stdin_open: true
     tty: true
-  host2:
-    build: host1
+  proxy2:
+    build: host
     stdin_open: true
     tty: true
-  host3:
-    build: host1
+  web1:
+    build: host
+    stdin_open: true
+    tty: true
+  web2:
+    build: host
+    stdin_open: true
+    tty: true
+  db:
+    build: host
     stdin_open: true
     tty: true
   control-server:
@@ -17,6 +25,8 @@ services:
     tty: true
     build: control-server
     links:
-      - host1:host1
-      - host2:host2
-      - host3:host3
+      - proxy1
+      - proxy2
+      - web1
+      - web2
+      - db
