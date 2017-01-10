@@ -1,0 +1,9 @@
+- Run tomcat on docker container
+- Verify the ports that are mapped to host system
+- Access tomcat using the container ip
+- Run tomcat with dynamic port mapping
+- Access tomcat using the dynamic port of host system
+- Run tomcat with 8080 port mapped to 80 port
+- Access tomcat using the 80 port
+- Deploy the Spring3HibernateApp to tomcat
+-  

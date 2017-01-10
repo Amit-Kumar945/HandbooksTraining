@@ -1,0 +1,10 @@
+- Run a mysql container in deamon mode
+- Create a database employeedb
+- Create a table user in db employeedb
+- Insert some dummy data in employeedb
+- Stop your container
+- Start your container
+- Verify if data exists in database or your not
+- Delete the mysql container
+- Run a new mysql container
+- Verify if the table and data still exists

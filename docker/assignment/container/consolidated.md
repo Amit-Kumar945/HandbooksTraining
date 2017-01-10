@@ -1,0 +1,5 @@
+- Download the Spring3HibernateApp from your local jenkins server
+- Setup tomcat on a docker container
+- Deploy your webapp on docker container
+- Setup mysql on a docker container
+- Make mysql available for tomcat to access
