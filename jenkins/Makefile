@@ -8,3 +8,7 @@ run-image:
 
 run-image-fg:
 	docker run -it --rm -P --name jenkins-fg training/jenkins
+
+run-image-dind:
+	docker rm -f jenkins-dind || true
+	docker run -it -p 8080:8080 -d --name jenkins-dind training/jenkins
