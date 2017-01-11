@@ -12,7 +12,7 @@ job('Poll SCM') {
 	   		}
 	 	}
   	triggers {
-        scm('H/15 * * * *')
+        scm('H/1 * * * *')
     }
 		steps {
         shell('#!/bin/bash \n cp jenkins/jobs/*.groovy ${JENKINS_HOME}/jobs/SeedJob/workspace')
