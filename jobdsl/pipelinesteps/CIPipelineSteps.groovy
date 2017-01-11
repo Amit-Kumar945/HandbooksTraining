@@ -9,4 +9,4 @@ stage 'Code Quality'
   build 'CodeCoverage'
 
 stage 'ArtifactGenerator'
-  build 'ArtifactGenrator'
+  build 'ArtifactGenerator'
