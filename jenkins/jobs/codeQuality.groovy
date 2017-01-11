@@ -14,6 +14,4 @@ mavenJob("CodeQuality") {
   goals('clean pmd:pmd checkstyle:checkstyle')
   rootPOM('Spring3HibernateApp/pom.xml')
   mavenInstallation('maven2')
-
-  }
 }
