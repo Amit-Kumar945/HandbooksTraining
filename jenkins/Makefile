@@ -1,10 +1,10 @@
-build:
-	docker build --no-cache -t training/jenkins .
+build-image:
+#	docker build --no-cache -t training/jenkins .
+	docker build -t training/jenkins .
 
-run:
+run-image:
 	docker rm -f jenkins || true
 	docker run -it -P -d --name jenkins training/jenkins
 
-run2:
-	docker run -it -P -d --name jenkins2 training/jenkins
-	
+run-image-fg:
+	docker run -it --rm -P --name jenkins-fg training/jenkins
