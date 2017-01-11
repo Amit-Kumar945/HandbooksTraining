@@ -15,6 +15,6 @@ job('Poll SCM') {
         scm('H/15 * * * *')
     }
 		steps {
-        shell('#!/bin/bash \n cp jobs/*.groovy ${JENKINS_HOME}/jobs/SeedJob/workspace/jobs')
+        shell('#!/bin/bash \n cp jenkins/jobs/*.groovy ${JENKINS_HOME}/jobs/SeedJob/workspace')
 		}
 }
