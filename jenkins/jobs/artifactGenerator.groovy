@@ -1,6 +1,6 @@
-mavenJob("CodeQuality") {
+mavenJob("ArtifactGenerator") {
   logRotator(60, 20, 1, -1)
-  description('Code Coverage Test for application')
+  description('I'll generate artifact of application')
   scm {
    		git {
      		branch('*/master')
