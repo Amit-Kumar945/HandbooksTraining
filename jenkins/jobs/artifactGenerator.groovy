@@ -14,4 +14,7 @@ mavenJob("ArtifactGenerator") {
   goals('clean package')
   rootPOM('Spring3HibernateApp/pom.xml')
   mavenInstallation('maven2')
+  postBuildSteps {
+    shell("echo 'I'll create image'")
+  }
 }
