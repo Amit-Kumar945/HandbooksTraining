@@ -4,7 +4,7 @@ build-image:
 
 run-image:
 	docker rm -f jenkins || true
-	docker run -it -P -d --name jenkins training/jenkins
+	docker run -it -p 8080:8080 -d --name jenkins training/jenkins
 
 run-image-fg:
 	docker run -it --rm -P --name jenkins-fg training/jenkins
