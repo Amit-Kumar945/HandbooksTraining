@@ -11,4 +11,4 @@ run-image-fg:
 
 run-image-dind:
 	docker rm -f jenkins-dind || true
-	docker run -it -p 8080:8080 -d --name -v /var/run/docker.sock:/var/run/docker.sock jenkins-dind training/jenkins
+	docker run -it -p 8080:8080 -d --name jenkins-dind -v /var/run/docker.sock:/var/run/docker.sock  training/jenkins
