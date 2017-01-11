@@ -1,0 +1,10 @@
+- Create Mysql Docker Image using Dockerfile
+    - Use mysql as base image
+    - Define author name and mail id info
+    - Make sure that your image should have
+      - employeedb database
+      - ```password``` as the password to connect to db
+    - Add labels "role=db", "env=dev"
+    - Make folder /var/log/mysql persistent
+
+- Verify your mysql image by running
