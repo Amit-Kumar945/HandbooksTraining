@@ -3,7 +3,7 @@ mavenJob("ArtifactGenerator") {
   description('I will generate artifact of application')
   scm {
    		git {
-     		branch('*/master')
+     		branch('*/dockerization')
      		remote {
        			name('')
        			refspec('')
@@ -15,6 +15,6 @@ mavenJob("ArtifactGenerator") {
   rootPOM('Spring3HibernateApp/pom.xml')
   mavenInstallation('maven2')
   postBuildSteps {
-    shell("echo 'I'll create image'")
+    shell("#!/bin/bash \n cd Spring3HibernateApp \n docker build -t opstree/spring3hibernateapp -f Dockerfile.tomcat .")
   }
 }
