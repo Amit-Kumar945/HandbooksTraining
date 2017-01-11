@@ -15,6 +15,6 @@ mavenJob("ArtifactGenerator") {
   rootPOM('Spring3HibernateApp/pom.xml')
   mavenInstallation('maven2')
   postBuildSteps {
-    shell("#!/bin/bash \n cd Spring3HibernateApp \n docker build -t opstree/spring3hibernateapp -f Dockerfile.tomcat .")
+    shell("#!/bin/bash \n cd Spring3HibernateApp \n docker build -t opstree/spring3hibernateapp -f Dockerfile.tomcat .\n docker build -t opstree/appdb -f Dockerfile.mysql .")
   }
 }
