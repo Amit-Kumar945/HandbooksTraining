@@ -12,7 +12,7 @@ pipelineJob("CIPipeline") {
     cpsScm {
       scm {
         git {
-          branch('*/master')
+          branch('*/sandy')
           remote {
             name('')
             refspec('')
