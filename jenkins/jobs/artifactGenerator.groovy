@@ -1,6 +1,6 @@
 mavenJob("ArtifactGenerator") {
   logRotator(60, 20, 1, -1)
-  description('I'll generate artifact of application')
+  description('I will generate artifact of application')
   scm {
    		git {
      		branch('*/master')
