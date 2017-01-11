@@ -3,7 +3,7 @@ job('Poll SCM') {
     logRotator(-1, 10)
 		scm {
 	   		git {
-	     		branch('*/master')
+	     		branch('*/sandy')
 	     		remote {
 	       			name('')
 	       			refspec('')
