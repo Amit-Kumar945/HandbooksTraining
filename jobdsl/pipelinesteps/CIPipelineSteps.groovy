@@ -10,3 +10,6 @@ stage 'Code Quality'
 
 stage 'ArtifactGenerator'
   build 'ArtifactGenerator'
+
+stage 'Deployer'
+  build 'AppDeployer'
