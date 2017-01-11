@@ -1,4 +1,4 @@
-mavenJob("CodeCoverage") {
+mavenJob("CodeQuality") {
   logRotator(60, 20, 1, -1)
   description('Code Coverage Test for application')
   scm {
