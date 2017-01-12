@@ -1,0 +1,5 @@
+proxy1 ansible_user=nginx
+proxy2 ansible_user=nginx
+web1 ansible_user=tomcat
+web2 ansible_user=tomcat
+db
