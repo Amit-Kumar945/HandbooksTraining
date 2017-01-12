@@ -3,9 +3,9 @@ This assignment is an extension of assignment 1, no module should be used to do 
   - Install nginx in both proxy servers
     - ```apt-get -y install nginx```
   - Update the home page of AZ A proxy server with content "I'm AZ A proxy server"
-    - Need to update the content of ```/usr/share/nginx/html/index.html```
+    - Need to update the content of ```/usr/share/nginx/html/index.html``` (Can be skipped)
   - Update the home page of AZ B proxy server with content "I'm AZ B proxy server"
-    - Need to update the content of ```/usr/share/nginx/html/index.html```
+    - Need to update the content of ```/usr/share/nginx/html/index.html``` (Can be skipped)
 - Tomcat setup
   - Install tomcat in both web-app server
   - Deploy the webapp to both web-app server(Can be skipped)
