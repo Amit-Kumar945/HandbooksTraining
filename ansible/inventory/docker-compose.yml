@@ -1,36 +1,36 @@
 version: '2'
 services:
   proxy1:
-    build: 
-      context: host
+    build:
+      context: userhost
       args:
         name: nginx
     stdin_open: true
     tty: true
   proxy2:
     build:
-      context: host
+      context: userhost
       args:
         name: nginx
     stdin_open: true
     tty: true
   web1:
     build:
-      context: host
+      context: userhost
       args:
         name: tomcat
     stdin_open: true
     tty: true
   web2:
     build:
-      context: host
+      context: userhost
       args:
         name: tomcat
     stdin_open: true
     tty: true
   db:
     build:
-      context: host/mysql
+      context: keyhost
     stdin_open: true
     tty: true
   control-server:
