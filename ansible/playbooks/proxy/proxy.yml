@@ -12,4 +12,3 @@
 
     - name: Adding Custom Index File
       copy: content='this is proxy1' dest=/usr/share/nginx/html/index.html
-

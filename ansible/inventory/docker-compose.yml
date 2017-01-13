@@ -31,12 +31,14 @@ services:
     stdin_open: true
     tty: true
     privileged: true
+
   db:
     build:
       context: keyhost
     stdin_open: true
     tty: true
     privileged: true
+
   control-server:
     stdin_open: true
     build: control-server
@@ -46,3 +48,8 @@ services:
       - web1
       - web2
       - db
+    volumes:
+      - ansible:/etc/ansible
+
+volumes:
+  ansible:

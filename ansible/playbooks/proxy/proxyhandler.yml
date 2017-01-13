@@ -1,0 +1,23 @@
+---
+- hosts: proxy1
+  remote_user: root
+
+  tasks:
+
+    - name: Install Nginx Server
+      apt: name=nginx state=latest
+
+    - name: Start Nginx Service
+      service: name=nginx state=started enabled=yes
+
+    - name: Adding Custom Index File
+      copy: content='this is proxy1' dest=/usr/share/nginx/html/index.html
+
+      notify:
+        - Restart Nginx
+
+  handlers:
+
+    - name: Restart Nginx
+      service: name=nginx state=restarted
+
