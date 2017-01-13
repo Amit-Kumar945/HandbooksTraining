@@ -1,0 +1,22 @@
+---
+- hosts: db
+  remote_user: root
+
+  tasks:
+
+    - name: Install MySQL
+      apt: name={{ item }} state=present
+      with_items:
+        - python-mysqldb
+        - mysql-server
+
+    - name: Start Mysql Service
+      service: name=mysql state=started enabled=yes
+
+    - mysql_user:
+        name: root
+        password: password
+        priv: '*.*:ALL,GRANT'
+        state: present
+
+
