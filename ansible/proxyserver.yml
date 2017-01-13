@@ -1,0 +1,6 @@
+---
+
+- hosts: proxy1
+  
+  roles:
+    - proxy

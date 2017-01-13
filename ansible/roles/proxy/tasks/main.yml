@@ -1,0 +1,14 @@
+---
+
+  - name: Install Nginx Server
+    apt: name=nginx state=latest
+
+  - name: Start Nginx Service
+    service: name=nginx state=started enabled=yes
+
+  - name: Adding Custom Index File
+    copy: content='this is proxy server' dest=/usr/share/nginx/html/index.html
+
+    notify:
+      - Restart Nginx
+
