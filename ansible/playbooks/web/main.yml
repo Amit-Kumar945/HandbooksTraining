@@ -1,0 +1,15 @@
+---
+- hosts: web1
+  remote_user: root
+
+  tasks:
+
+    - name: Install Java
+      apt: name=openjdk-7-jdk state=present
+
+    - name: Install Tomcat Server
+      apt: name=tomcat7 state=latest
+
+    - name: Start Tomcat Service
+      service: name=tomcat7 state=started enabled=yes
+
