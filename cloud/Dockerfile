@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 
-RUN apt-get update && apt-get -y --force-yes install wget vim git unzip
+RUN apt-get update && apt-get -y --force-yes install wget vim git unzip telnet
 
 WORKDIR /usr/local/terraform
 RUN wget https://releases.hashicorp.com/terraform/0.7.9/terraform_0.7.9_linux_amd64.zip && unzip terraform_0.7.9_linux_amd64.zip
