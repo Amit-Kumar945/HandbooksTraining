@@ -7,8 +7,5 @@ resource "aws_subnet" "subnet" {
     Name = "${var.name}"
   }
 
-#  map_public_ip_on_launch = "${var.map_public_ip_on_launch}"
-
-
-map_public_ip_on_launch = "true"
+  map_public_ip_on_launch = "true"
 }
