@@ -32,3 +32,10 @@ module "docker-node0" {
   zone_id            = "${module.vpc.zone_id}"
   security_group_ids = ["${module.vpc.default_sg_id}"]
 }
+
+module "default_sg_allow_ssh" {
+  source            = "./modules/security_group_rule"
+  to_port           = "22"
+  from_port         = "22"
+  security_group_id = "${module.vpc.default_sg_id}"
+}
