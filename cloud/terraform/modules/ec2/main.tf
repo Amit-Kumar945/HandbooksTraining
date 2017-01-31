@@ -31,9 +31,3 @@ resource "aws_route53_record" "route53_record" {
   ttl     = "30"
   records = ["${aws_instance.instance.private_ip}"]
 }
-
-resource "aws_eip" "lb" {
-  instance = "${aws_instance.instance.id}"
-
-  # vpc = "${var.vpc}"
-}
