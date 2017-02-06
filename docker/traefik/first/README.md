@@ -10,3 +10,7 @@ What we will do here
 - Once all the containers are up you can access the web ui of traefik at localhost:8080
 - Access service1 via traefik ```curl -v --header 'Host: service1.docker.local' localhost```
 - Access service2 via traefik ```curl -v --header 'Host: service2.docker.local' localhost```
+
+What you can try on later
+- Change the web console of traefik
+- Chagne the domain name in traefik
