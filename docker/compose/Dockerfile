@@ -1,0 +1,9 @@
+FROM ubuntu:14.04
+
+MAINTAINER Sandeep Rawat
+
+RUN apt-get -y update
+
+ADD helloworld.txt /tmp/helloworld.txt
+
+ENTRYPOINT /bin/bash
