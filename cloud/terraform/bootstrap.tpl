@@ -27,6 +27,7 @@ function setup_docker() {
 
 function setup_docker_compose() {
   curl -L --fail "https://github.com/docker/compose/releases/download/1.11.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+  chmod +x /usr/local/bin/docker-compose
 }
 
 check_internet

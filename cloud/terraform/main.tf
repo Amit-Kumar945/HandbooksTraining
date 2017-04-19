@@ -109,3 +109,29 @@ module "swarm_node_1" {
   aws_region         = "${var.aws_region}"
   user_data          = "${data.template_file.swarm_bootstrap.rendered}"
 }
+
+module "swarm_node_2" {
+  source             = "github.com/opstree-terraform/ec2"
+  subnet_id          = "${module.mgmt_subnet_azb.id}"
+  name               = "spark-node-2"
+  key_pair_id        = "${module.key_pair.id}"
+  aws_region_os      = "${var.aws_region}-ubuntu"
+  security_group_ids = ["${module.vpc.default_sg_id}", "${module.pub_http_sg.id}", "${module.pub_ssh_sg.id}"]
+  type               = "t2.micro"
+  zone_id            = "${module.vpc.zone_id}"
+  aws_region         = "${var.aws_region}"
+  user_data          = "${data.template_file.swarm_bootstrap.rendered}"
+}
+
+module "swarm_node_3" {
+  source             = "github.com/opstree-terraform/ec2"
+  subnet_id          = "${module.mgmt_subnet_aza.id}"
+  name               = "spark-node-3"
+  key_pair_id        = "${module.key_pair.id}"
+  aws_region_os      = "${var.aws_region}-ubuntu"
+  security_group_ids = ["${module.vpc.default_sg_id}", "${module.pub_http_sg.id}", "${module.pub_ssh_sg.id}"]
+  type               = "t2.micro"
+  zone_id            = "${module.vpc.zone_id}"
+  aws_region         = "${var.aws_region}"
+  user_data          = "${data.template_file.swarm_bootstrap.rendered}"
+}
