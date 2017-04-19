@@ -1,0 +1,9 @@
+- Create swarm master node
+  - docker swarm init --advertise-addr 18.0.1.168
+- Note down the token
+- Join nodes with the token
+  - docker swarm join --token <token> <master ip>:<master port>
+  - docker swarm join --token SWMTKN-1-4aj4bg5ae9apwzedlek1nt6iepkyrau6okgz62rxk7et5m92x1-dbi85o20rn7ue4794snw88vpz 18.0.1.168:2377
+- List nodes
+  - docker node ls
+  -

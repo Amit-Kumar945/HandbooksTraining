@@ -1,0 +1,14 @@
+version: "3"
+services:
+tomcat:
+       image: sandyot/tomcat
+       ports:
+       - "8082:8080"
+       deploy:
+       environment:
+        - "constraints: node==18.0.1.72"
+mysql:
+       image: rahul09/mysql
+       deploy:
+       environment:
+        - "constraints: node==18.0.2.110"
