@@ -6,4 +6,7 @@
   - docker swarm join --token SWMTKN-1-4aj4bg5ae9apwzedlek1nt6iepkyrau6okgz62rxk7et5m92x1-dbi85o20rn7ue4794snw88vpz 18.0.1.168:2377
 - List nodes
   - docker node ls
-  -
+- Clone the docker compose repository
+  - https://github.com/OpsTree/HandbooksTraining.git
+- Run the swarm cluster using docker compose
+  - docker deploy --compose-file docker-compose.yml sandy

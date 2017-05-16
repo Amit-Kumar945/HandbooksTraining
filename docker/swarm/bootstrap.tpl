@@ -23,6 +23,7 @@ function setup_docker() {
   add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
   apt-get update
   apt-get -y install docker-ce
+  usermod -a -G docker ubuntu
 }
 
 function setup_docker_compose() {
